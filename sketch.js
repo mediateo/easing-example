@@ -1,13 +1,13 @@
 let x = 0;
 let y = 0;
-let easing = 0.05; // 1 ~ 0
+let easing = 0.05;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(3, 244, 252, 20);
+    background(3, 244, 252);
 }
-function draw() {
 
+function draw() {
     let targetX = mouseX;
     x += (targetX - x) * easing;
     
